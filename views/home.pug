@@ -9,6 +9,7 @@ block content
             if result
                 each imgData in result
                     +imgBlock({
+                        id:imgData.id,
                         path:imgData.path,
                         title:imgData.title
                     }) 

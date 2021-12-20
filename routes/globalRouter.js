@@ -1,5 +1,5 @@
 import express from "express";
-import { archive, getLogin, getUpload, home, logout, mission, postLogin, postUpload, userInfo } from "../controller/controller";
+import { archive, detail, getLogin, getUpload, home, logout, mission, postLogin, postUpload, userInfo } from "../controller/controller";
 import { onlyPrivate, onlyPublic, uploadImg } from "../localMiddleward";
 import { routes } from "../routes";
 
@@ -16,6 +16,8 @@ globalRouter.get(routes.userInfo,onlyPrivate,userInfo);
 
 globalRouter.get(routes.upload,onlyPrivate,getUpload);
 globalRouter.post(routes.upload,onlyPrivate,uploadImg,postUpload);
+
+globalRouter.get(routes.detail(),detail);
 
 globalRouter.get(routes.logout,onlyPrivate,logout);
 

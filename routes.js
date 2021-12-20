@@ -6,6 +6,7 @@ const USERINFO = "/userInfo"
 const LOGIN = "/admin"
 const LOGOUT = "/logout"
 const UPLOAD = "/upload"
+const DEAIL = "/detail/:id"
 
 
 export const routes ={
@@ -16,6 +17,13 @@ export const routes ={
     userInfo : USERINFO,
     login : LOGIN,
     logout : LOGOUT,
-    upload : UPLOAD
+    upload : UPLOAD,
+    detail(id){
+        if(id){
+            return `/detail/${id}`
+        }else{
+            return DEAIL
+        }
+    }
 }
 

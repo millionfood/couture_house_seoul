@@ -115,3 +115,10 @@ export const logout = (req,res) =>{
         res.redirect('/login');
     }
 }
+
+export const detail = (req,res)=>{
+    const reqPath = req.originalUrl;
+    const path =  reqPath.substring(reqPath.length-2);
+    console.log(path)
+    res.render("detail")
+}
