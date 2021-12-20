@@ -1,0 +1,10 @@
+extends layout/main
+
+block content 
+    .login_container 
+        .login_box 
+            span.login_title Login
+            form.login_form(action="/admin" method="post")
+                input.login_input.login_id(type="text" name="id" placeholder="id" onfocus="this.placeholder=''")
+                input.login_input.login_pw(type="password" name="password" placeholder="password" onfocus="this.placeholder=''")
+                input.login_input.login_submit(type="submit" value="login") 

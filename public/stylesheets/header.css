@@ -1,0 +1,53 @@
+div{
+    /* border: 1px solid white; */
+}
+
+.container{
+    background-color: #000000;
+    color: white;
+    text-transform: uppercase;
+}
+
+span{
+    color: #A8A6A1;
+}
+
+.header{
+    height: 90px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+.header_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.header_box1{
+    
+}
+
+.header_box2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_box2 a{
+    text-decoration: none;
+}
+
+.header_box3>span>a>i{
+    font-size: 17px;
+    color: #A8A6A1;
+}
+
+.header_box3>span:not(:last-child){
+    margin-right: 20px;
+}
+
+.header_box span{
+    font-size: 15px;
+}

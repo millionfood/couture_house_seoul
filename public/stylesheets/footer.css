@@ -1,0 +1,33 @@
+.footer{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.footer_menu{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+}
+
+.footer_menu span{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #A8A6A1;
+}
+
+
+.footer_sns{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+}
+
+.footer_sns>span:first-child>i{
+    margin-right: 20px;
+}

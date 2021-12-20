@@ -1,0 +1,14 @@
+extends layout/main
+
+block content
+    .upload_container
+        .upload_title 
+            span upload img 
+        .upload_box 
+            form(action="/upload" method="post" enctype="multipart/form-data").upload_form
+                label.upload_input_box(for="upload") 파일 선택
+                input(type="file" id="upload" name="imgFile" accept="image/*",onchange="javascript:document.getElementById('file_text').value=this.value")
+                input.upload_input_box(type="text" id="file_text" readonly)
+                input.upload_input_box(type="text" id="file_title" name="title" placeholder="title")
+                textarea.upload_textarea(name="description" cols="30" rows="5" placeholder="description...")
+                input.upload_submit(type="submit" value="UPLOAD")
